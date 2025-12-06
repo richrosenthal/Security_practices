@@ -30,8 +30,23 @@
 
 # 9  
 
+
+#This is definitely convoluted but at least I'm getting somewhere
+#My solution is to take the input of comma separated strings and place them in the below variables
 cities_raw = input()
 cities_filtered = cities_raw.split(',')
 cities_array = []
+city_ids = []
+city_names = []
+
+
+#this first for loop is to split up strings based on commas. the end result will have something like [10 City]
 for city in cities_filtered:
     cities_array.append(city.split())
+
+#this for loop will then split the ids into one array and cities into the other. I might build the hash table into this loop    
+for city in cities_array:
+    city_id = int(city[0])
+    print(city_id)
+    city_name = city[1]
+    print(city_name)
