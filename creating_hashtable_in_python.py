@@ -53,3 +53,10 @@ for city in cities_array:
     #sprinkle a little simple hash
     index = city_id % 10
     hash_list[index].append(city_name)
+
+#this will loop through the hash table and output it in the format requested
+for i in range(10):
+    print(i, end=' ')
+    for city in hash_list[i]:
+        print(city, end=' ')
+    print()
