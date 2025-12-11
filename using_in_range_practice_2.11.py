@@ -15,20 +15,33 @@
 
 # The number input is not in the range from 1 and 10.
 
-check if the input range is between 1 and 10 for the range validation check
+# check if the input range is between 1 and 10 for the range validation check
 
+# if __name__ == '__main__': 
+        
+#     r = range(1,10)
+    
+#     num = int(input())   
+#     # create conditional statement for range check here
+#     flag = False
+#     for numbers in r:
+#         if (numbers + 1) == num:
+#             flag = True
+    
+#     if flag == True:
+#         print("The number input is in the range from 1 and 10.")
+#     else:
+#         print("The number input is not in the range from 1 and 10.")
+
+
+#fixed my idiotic code. I had brute forced and overcomplicated the ask.
 if __name__ == '__main__': 
         
     r = range(1,10)
     
     num = int(input())   
     # create conditional statement for range check here
-    flag = False
-    for numbers in r:
-        if (numbers + 1) == num:
-            flag = True
-    
-    if flag == True:
+    if num in range(1,11):
         print("The number input is in the range from 1 and 10.")
     else:
         print("The number input is not in the range from 1 and 10.")
