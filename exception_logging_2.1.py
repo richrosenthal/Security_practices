@@ -14,7 +14,9 @@ def divideByZeroError(dividend, divisor):
         
     #pulled logging level error, made the exception more specific ZeroDivisionError instead of Exception  
     except ZeroDivisionError as e:
-        logging.error(" The exception that occurred is: %s", e)
+        #logging.error(" The exception that occurred is: %s", e)
+        #a different way of doing this is using + str(e)
+        logging.error(" The exception that occurred is: " + str(e))
 
 if __name__ == '__main__': 
 
